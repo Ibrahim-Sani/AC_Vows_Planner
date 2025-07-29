@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AC Vows Planner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fff8f2;
+      color: #333;
+    }
+    header {
+      background: url('https://www.mindyweiss.com/wp-content/uploads/2021/11/mindy-weiss-hero.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 0.5em;
+    }
+    .btn {
+      background: #f7c8a8;
+      color: #fff;
+      padding: 0.8em 1.5em;
+      border: none;
+      font-size: 1em;
+      margin-top: 1.5em;
+      cursor: pointer;
+      text-transform: uppercase;
+      border-radius: 5px;
+    }
+    section {
+      padding: 3em 2em;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1em;
+    }
+    .package {
+      background: #fff;
+      border-left: 5px solid #f7c8a8;
+      padding: 1em;
+      margin-bottom: 2em;
+    }
+    .package h3 {
+      margin-top: 0;
+    }
+    .about {
+      display: flex;
+      gap: 2em;
+      flex-wrap: wrap;
+    }
+    .about img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    footer {
+      background: #f7c8a8;
+      color: #fff;
+      text-align: center;
+      padding: 2em;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Say 'I Do' the Aminah Clarke Way</h1>
+    <p>Flawless, Elegant, Modest, and Halal-Friendly Wedding Planning</p>
+    <a href="#contact"><button class="btn">Book a Free Consultation</button></a>
+  </header>
+
+  <section>
+    <h2>Our Packages</h2>
+    <div class="package">
+      <h3>🥈 Silver Bloom – From $750</h3>
+      <p>Graceful coordination for modest celebrations. Includes 30–60 day prep, 1–2 calls, and day-of execution.</p>
+    </div>
+    <div class="package">
+      <h3>🥇 Gold Grace – From $1,500</h3>
+      <p>Full modest + halal guidance, vendor sourcing, budget support, timeline & full day-of coordination.</p>
+    </div>
+    <div class="package">
+      <h3>💎 Aminah Pearl – From $3,000</h3>
+      <p>Luxury full-service planning: theme design, modest fashion consult, RSVPs, transport, and more.</p>
+    </div>
+    <div class="package">
+      <h3>✨ Golden Touch – From $1,000</h3>
+      <p>Perfect final touch support for couples who self-planned. Includes referrals, 3 calls, and light coordination.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div>
+      <h2>Meet Aminah Clarke</h2>
+      <p>Founder of AC Vows Planner, Aminah brings faith-conscious elegance to every wedding she touches. Based in Kigali, she offers tailored planning for modest, respectful celebrations around the world.</p>
+    </div>
+    <img src="https://scontent.cdninstagram.com/v/t51.29350-15/386080066_1289937968340917_2692241860034861298_n.jpg" alt="Aminah Clarke" />
+  </section>
+
+  <section>
+    <h2>Why Couples Choose Us</h2>
+    <ul>
+      <li>Faith-conscious, elegant planning</li>
+      <li>Halal-friendly vendor network</li>
+      <li>Luxury service with modest values</li>
+      <li>Support for all backgrounds</li>
+      <li>Free consultation & flexible payment</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Book Your Consultation</h2>
+    <p>DM us on <a href="https://instagram.com/ac-vows-planner" target="_blank">@ac-vows-planner</a> or fill out our form below.</p>
+    <!-- Embed form here -->
+    <button class="btn">Get Started</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AC Vows Planner. All rights reserved. | Site inspired by Mindy Weiss</p>
+    <p><a href="https://instagram.com/ac-vows-planner" target="_blank">Instagram</a></p>
+  </footer>
+</body>
+</html>
