@@ -2,7 +2,7 @@
 
 ## Overview
 
-AC Vows Planner is a modern, faith-conscious wedding planning application specializing in elegant, modest, and halal-friendly celebrations. The application provides a comprehensive platform for couples to explore wedding packages, view portfolios, read testimonials, and book consultations with professional planner Aminah Clarke.
+AC Vows Planner is a modern, faith-conscious wedding planning application specializing in elegant, modest, and halal-friendly celebrations. The application provides a comprehensive platform for couples to explore wedding packages, view portfolios, read testimonials, and book consultations with professional planner Aminah Clarker.
 
 ## User Preferences
 
@@ -11,6 +11,7 @@ Preferred communication style: Simple, everyday language.
 ## System Architecture
 
 ### Frontend Architecture
+
 The application uses a **React-based Single Page Application (SPA)** architecture with modern tooling:
 
 - **Framework**: React 18 with TypeScript for type safety
@@ -23,6 +24,7 @@ The application uses a **React-based Single Page Application (SPA)** architectur
 **Design Philosophy**: The frontend prioritizes performance, accessibility, and a clean component-based architecture. The application uses a wedding-themed color palette (cream, peach, gold, brown) to create an elegant, faith-conscious aesthetic.
 
 ### Backend Architecture
+
 The backend follows a **REST API architecture** using Express.js:
 
 - **Framework**: Express.js with TypeScript
@@ -34,6 +36,7 @@ The backend follows a **REST API architecture** using Express.js:
 **Architecture Pattern**: The backend uses a service layer pattern with separation of concerns between routes, storage, and business logic.
 
 ### Data Storage Architecture
+
 The application uses **PostgreSQL** as the primary database with Drizzle ORM:
 
 - **Schema Management**: Drizzle Kit for migrations and schema management
@@ -44,6 +47,7 @@ The application uses **PostgreSQL** as the primary database with Drizzle ORM:
 ## Key Components
 
 ### Database Schema
+
 Three main entities power the application:
 
 1. **Consultations**: Stores client consultation requests with contact details, preferences, and messages
@@ -51,18 +55,22 @@ Three main entities power the application:
 3. **Testimonials**: Client reviews and ratings for social proof
 
 ### API Endpoints
+
 - `GET /api/packages` - Retrieve all wedding packages
 - `GET /api/testimonials` - Retrieve client testimonials
 - `POST /api/consultations` - Submit consultation requests
 - `GET /api/consultations` - Admin endpoint for viewing submissions
 
 ### Frontend Components
+
 **Layout Components**:
+
 - Navigation with smooth scrolling
 - Hero section with call-to-action
 - Footer with social links
 
 **Content Components**:
+
 - Packages showcase with interactive selection
 - About section featuring the planner
 - Gallery with elegant image displays
@@ -74,12 +82,14 @@ Three main entities power the application:
 ## Data Flow
 
 ### Client-Server Communication
+
 1. **Initial Load**: Client fetches packages and testimonials via React Query
 2. **Form Submission**: Contact form data is validated client-side using Zod schemas, then submitted to REST API
 3. **Real-time Updates**: React Query manages caching and background refetching
 4. **Error Handling**: Comprehensive error boundaries and toast notifications
 
 ### Form Processing
+
 1. Client-side validation using React Hook Form with Zod resolvers
 2. Type-safe API requests with proper error handling
 3. Optimistic UI updates and success/error feedback
@@ -88,6 +98,7 @@ Three main entities power the application:
 ## External Dependencies
 
 ### Frontend Dependencies
+
 - **UI Framework**: Radix UI primitives for accessibility
 - **Form Management**: React Hook Form with Hookform Resolvers
 - **Data Fetching**: TanStack React Query
@@ -96,6 +107,7 @@ Three main entities power the application:
 - **Utilities**: clsx, date-fns, nanoid
 
 ### Backend Dependencies
+
 - **Database**: Neon Database serverless PostgreSQL
 - **ORM**: Drizzle ORM with Zod integration
 - **Session Management**: Connect-pg-simple
@@ -103,6 +115,7 @@ Three main entities power the application:
 - **Development**: tsx for TypeScript execution
 
 ### Development Tools
+
 - **Build**: Vite with React plugin
 - **Linting**: TypeScript compiler checking
 - **Database Migrations**: Drizzle Kit
@@ -111,18 +124,21 @@ Three main entities power the application:
 ## Deployment Strategy
 
 ### Build Process
+
 1. **Frontend Build**: Vite compiles React application to static assets
 2. **Backend Build**: esbuild bundles Express server with external package references
 3. **Database Setup**: Drizzle migrations ensure schema consistency
 4. **Asset Optimization**: Static assets are optimized and served efficiently
 
 ### Environment Configuration
+
 - **Development**: Local development with tsx and Vite dev server
 - **Production**: Node.js server serving static frontend and API routes
 - **Database**: Environment-based DATABASE_URL configuration
 - **Replit Integration**: Special handling for Replit development environment
 
 ### Hosting Requirements
+
 - Node.js runtime environment
 - PostgreSQL database (Neon Database recommended)
 - Environment variables for database connection
